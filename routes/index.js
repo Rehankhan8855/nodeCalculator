@@ -19,5 +19,7 @@ router.get("/home", (req,res) =>{
 
 router.get("/contact",(req,res) =>{
   res.send("Hi, I am Contact Page")
-})
+});
+
+router.get('/calculate', calculatorcontroller.calculate);
 module.exports = router;
